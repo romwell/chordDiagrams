@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1;charset=windows-1252">
+	<title>Chord Diagrams - Roman Kogan - Texas A&M University</title>
+	<style type="text/css" media="screen">
+		body
+		{
+			margin: 0;
+			padding: 0;
+			font-family: georgia, times, "times new roman", serif;
+			color: #000;
+			background-color: #ddd;
+		}
+		
+		#container
+		{
+			margin: 1em 5%;
+			background-color: #FFF;
+			background-image:  url(mathtran_images/backgrou.jpg);
+			background-repeat: repeat-y;
+			border: 1px solid #333;
+		}
+		
+		#banner
+		{
+			background-color: #666;
+			border-bottom: 1px solid #333;
+		}
+		
+		#banner h1
+		{
+			margin: 0;
+			padding: .5em;
+		}
+		
+		#nav
+		{
+			float: left;
+			width: 400px;
+			margin-left: 10px;
+			padding-top: 1em;
+		}
+		
+		#nav p { margin-top: 0; }
+		
+		#content
+		{
+			padding-top: 1em;
+			margin: 0 2em 0 200px;
+		}
+		
+		#content h2 { margin-top: 0; }
+		
+		#footer
+		{
+			clear: both;
+			background-color: #666;
+			padding: 1em;
+			text-align: left;
+			border-top: 1px solid #333;
+			color: #DD8
+		}
+</style>
+    <script type="text/javascript"
+            src="processing-0.9.6.js"></script>
+    <script type="text/javascript">
+      window.onload = function() {
+        var scr = document.getElementsByTagName("script");
+        for (var i = 0; i < scr.length; ++i) {
+          if (scr[i].type == "application/processing") {
+            scr = scr[i];
+            break;
+          }
+        }
+        var can = document.getElementsByTagName("canvas")[0];
+        Processing(can, scr.text);
+      };
+    </script>
+
+</head>
+<body>
+
+
+<div id="container">
+
+
+
+<center><h2> CHORD DIAGRAMS </h2><br>
+<h3>Computation with Chord diagrams of Vassiliev Invariants</h3>
+</center>
+
+This program allows you to do computations within the algebra of
+chord diagrams; in particular, it will find the basis of the space
+of chord diagrams for colored links. It will generate and display
+the bases and the 4T relations, like this:
+
+<center>
+<img src="relation.png" width="900">
+</center>
+
+With it, you can create images like the one on this page with ease,
+and explore the fun world of chord diagrams :)
+
+
+<h3> DOCUMENTATION </h3>
+
+<br><a href="doc/index.html">Extensive Javadoc</a>
+
+<h3> DOWNLOAD</h3>
+
+Chord Diagrams is a Java program that has been test on Windows and requires Mathematica
+for row-reduction. You need to have Mathematica - Java API classes installed to run it.
+
+<br> Download link:  <a href="ChordDiagrams_source.zip">Java Source Code, Documentation and Binaries</a>
+
+
+      
+<h3>USAGE</h3> 
+<ul>
+<li>Unpack the archive containing the chordDiagrams folder;
+
+<li>Using the command line, naviagte to the folder that contains chordDiagrams folder;
+
+<li>execute "java chordDiagrams/Driver";
+
+<li>follow the prompts: first, select "1" to compute 4T relations with all diagrams 
+having N chords and L links by specifying N and L. Then compute the basis and/or draw the results.
+
+<li>Every time you compute something, the result is saved into a file so you don't have to recompute it later.
+
+</ul>
+
+    </div>
+
+<div id="footer"> 
+<p>Roman Kogan
+<br><a  style="color: #DDDD88" href="mailto:romwell@gmail.com">romwell@gmail.com</a>
+<br><a style="color: #DDDD88" href="http://www.math.tamu.edu/~romwell">http://www.math.tamu.edu/~romwell</a>
+
+
+
+ </div>
+
+
+  </body>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-15635480-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</html>
